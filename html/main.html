@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>NGCK WEBDESIGN</title>
+</head>
+
+<body style="background-color: black;">
+
+  
+<!-- top navigation -->
+<div >
+    <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper" style="background-color: black;"> 
+            <a href="#" class="brand-logo"><img src="/images/logo banner.png" 
+              class="hide-on-med-and-down"style="width: 60%; margin-top:8px; margin-left:15 px;"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li><ul id="dropdown2" class="dropdown-content"><br>
+                          <li><a href="#modal1" class="waves-effect waves-light modal-trigger">
+                            LOGIN</a></li>
+                           
+                          <li><a href="#!">REGISTER</a></li>
+                        </ul>
+                        <a class="dropdown-trigger" href="#!" data-target="dropdown2">
+                          OTHERS<i class="material-icons right">arrow_drop_down</i></a></li>
+                    </ul>
+          </div>
+        </nav>
+    </div>
+
+     <!-- Modal Structure -->
+     <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>ALERT!!!</h4>
+        <p>Not Available as of this time . . .</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+    </div>  
+    
+
+    <!-- side navigation -->
+    <ul class="sidenav" id="mobile-demo">
+        <ul id="slide-out" class="sidenav"></ul>
+        <li>
+            <div class="user-view">
+                <div class="background">
+                <img src="/images/wallpaper.jpg" style="width:100%;">
+            </div>  
+                <a href="#user"><img class="circle" src="/images/loginlogo.png"></a>
+                <a href="#name"><span class="black-text name"><strong>ADMIN</strong></span></a>
+                <a href="#email"><span class="black-text email">admin@gmail.com</span></a>
+        </li>
+
+            <li><a href="#home"><i class="material-icons">home</i>HOME</a></li>
+            <li><a href="#about"><i class="material-icons">help</i>ABOUT</a></li>
+            <li><a href="#contact"><i class="material-icons">contacts</i>CONTACT US</a></li>
+            <li><a href="/signup.html"><i class="material-icons">person</i>LOGOUT</a></li>    
+            <li><div class="divider"></div></li>
+
+            <img src="/images/local-advertising-ideas-social.jpg" style="width:100%;">
+    </ul> 
+
+
+    <!-- announcement slider -->
+    <div class="carousel carousel-slider center">
+    
+        <div class="carousel-item red white-text" href="#one!">
+      
+        </div>
+        <div class="carousel-item amber white-text" href="#two!">
+          <h2>Second Panel</h2>
+          <p class="white-text">This is your second panel</p>
+        </div>
+        <div class="carousel-item green white-text" href="#three!">
+          <h2>Third Panel</h2>
+          <p class="white-text">This is your third panel</p>
+        </div>
+        <div class="carousel-item blue white-text" href="#four!">
+          <h2>Fourth Panel</h2>
+          <p class="white-text">This is your fourth panel</p>
+        </div>
+      </div>
+
+
+    <!-- other services -->
+    <div class="row">
+
+        <div class="col s12 l4" style="background-color: black;">
+
+          <div class="row">
+            <div class="col s12 m9 l4">
+           
+              <ul class="section table-of-contents" ><br><br>
+                <li><a href="#!" style="color: white;">Activities</a></li>
+                <li><a href="#!" style="color: white;">Minitries</a></li>
+                <li><a href="#" style="color: white;">Cellgroups</a></li>
+                <li><a href="#!" style="color: white;">Teachings</a></li>
+                <li><a href="#!" style="color: white;">Events</a></li>
+                <li><a href="#!" style="color: white;">Seminars</a></li>
+                <li><a href="#!" style="color: white;">Compiled Videos</a></li>
+                <li><a href="#!" style="color: white;">Gallery</a></li>
+                <li><a href="#!" style="color: white;">Other services</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- calendar -->      
+          <div class="month">      
+            <ul>
+              <li class="prev">&#10094;</li>
+              <li class="next">&#10095;</li>
+              <li>
+                December<br>
+                <span style="font-size:18px">2022</span>
+              </li>
+            </ul>
+          </div>
+          
+          <ul class="weekdays">
+            <li>Mo</li><li>Tu</li><li>We</li><li>Th</li><li>Fr</li><li>Sa</li><li>Su</li>
+          </ul>
+          
+          <ul class="days">  
+            <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li>
+            <li>6</li><li>7</li><li>8</li><li>9</li><li><span class="active">10</span></li>
+            <li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li>
+            <li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li>
+            <li>25</li><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li>
+          </ul><br><br>
+
+          <img src ="/images/local-advertising-ideas-social.jpg" style="width: 100%;">
+
+          <!-- contact form -->
+          
+          <h3 style="color: white;"><center>Contact Form</center></h3>
+
+              <div class="container">
+                <form action="/action_page.php">
+                  <label for="fname" style="color: black;">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                  <label for="lname" style="color: black;">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                  <label for="subject" style="color: black;">Message</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                  <center><input type="submit" value="Submit"></center>
+                </form>
+              </div><br>
+
+        </div>
+
+        <br><br>
+
+   <!-- scrollspy -->
+
+      <div class="row">
+            <div class="col s12 l8" style="background-image: url(/images/bck.jpg);">
+              <div id="about" class="section scrollspy">
+              <!-- mission vission & core values -->
+  
+              <br>
+              <img src ="/images/mission bg.png" style="width: 100%;">
+  
+              <h6 style="margin-left:40px; margin-right:40px ;"><center>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, officiis voluptatem, totam quasi provident sapiente laudantium 
+                  aperiam dolores necessitatibus quis dicta modi ex, quidem ipsum magni ab! Quos qui cupiditate recusandae maiores a! Magni, 
+                  recusandae molestiae? Magnam aliquam ea, doloribus, delectus repellat omnis obcaecati incidunt eius dolore possimus magni 
+              </center></h6>
+              <br><br>
+
+              <img src="/images/vision bg.png"style="width: 100%;">
+              <h6 style="margin-left:40px; margin-right:40px ;"><center>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, officiis voluptatem, totam quasi provident sapiente laudantium 
+                  aperiam dolores necessitatibus quis dicta modi ex, quidem ipsum magni ab! Quos qui cupiditate recusandae maiores a! Magni, 
+                  recusandae molestiae? Magnam aliquam ea, doloribus, delectus repellat omnis obcaecati incidunt eius dolore possimus magni
+                  obcaecati incidunt eius dolore possimus magni 
+              </center></h6><br><br>
+    
+              <img src="/images/values bg.png" style="width: 100%;">
+              <h6 style="margin-left:40px; margin-right:40px ;"><center>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, officiis voluptatem, totam quasi provident sapiente laudantium 
+                aperiam dolores necessitatibus quis dicta modi ex, quidem ipsum magni ab! Quos qui cupiditate recusandae maiores a! Magni, 
+                recusandae molestiae? Magnam aliquam ea, doloribus, delectus repellat omnis obcaecati incidunt eius dolore possimus magni
+                obcaecati incidunt eius dolore possimus magni 
+              </center></h6><br><br>
+  
+          </div>
+    
+          <div id="structure" class="section scrollspy">
+        
+            <div style="margin-left:15px;">
+              <iframe width="750" height="420" src="https://www.youtube.com/embed/KoBnxYg1ueI">
+              </iframe>
+              </div>
+              
+          </div>
+    
+          <div id="initialization" class="section scrollspy">
+            <p>Content </p>
+          </div>
+        </div>
+      </div>
+
+      
+      <footer class="page-footer" style="background-color: black;">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="black-text">Footer Content</h5>
+              <p class="grey-text ">You can use rows and columns here to organize your footer content.</p>
+              <img src="/images/adver.png" style="width:100%;">
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="black-text">Links</h5>
+              <ul>
+                <li><a class="grey-text " href="#!">Link 1</a></li>
+                <li><a class="grey-text " href="#!">Link 2</a></li>
+                <li><a class="grey-text " href="#!">Link 3</a></li>
+                <li><a class="grey-text " href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          <center>
+          <a class="black-text" href="#!"> Powered by<font style="color: rgb(47, 0, 255);">
+            @ Jr.Programmer</font></a></p></a></center>
+          </div>
+        </div>
+      </footer>
+
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.dropdown-trigger').dropdown();
+        $('.scrollspy').scrollSpy();
+        $('.modal').modal();
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+  });
+  });
+  
+
+  setInterval(function(){
+            $('.carousel').carousel('next');
+        },4000);
+</script>   
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    
+    <title>NGCK WEBDESIGN</title>
+</head>
+<body  style="background-image:url(/images/BANNER\ WALLPAPER.jpg);">
+
+    
+    <!-- top navigation -->
+    <div >
+        <div class="navbar-fixed w3-hover-opacity" >
+            <nav style="background-color:black;">
+              <div class="nav-wrapper ">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                            <li><ul id="dropdown2" class="dropdown-content"><br>
+                                <li><a href="#!">LOGIN</a></li>
+                                <li><a href="#!">REGISTER</a></li>
+                              </ul>
+                              <a class="dropdown-trigger" href="#!" data-target="dropdown2">
+                                OTHERS<i class="material-icons right">arrow_drop_down</i></a></li>
+                        </ul>
+              </div>
+            </nav>
+        </div>
+        
+
+        <!-- side navigation -->
+        <ul class="sidenav" id="mobile-demo">
+            <ul id="slide-out" class="sidenav"></ul>
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                    <img src="/images/wallpaper.jpg" style="width:100%;">
+                </div>  
+                    <a href="#user"><img class="circle" src="/images/loginlogo.png"></a>
+                    <a href="#name"><span class="black-text name"><strong>ADMIN</strong></span></a>
+                    <a href="#email"><span class="black-text email">admin@gmail.com</span></a>
+            </li>
+
+                <li><a href="#!"><i class="material-icons">shopping_cart</i>My Cart</a></li>
+                <li><a href="#!"><i class="material-icons">history</i>Order History</a></li>
+                <li><div class="divider"></div></li>
+                <li><a href="#home"><i class="material-icons">home</i>HOME</a></li>
+                <li><a href="#about"><i class="material-icons">help</i>ABOUT</a></li>
+                <li><a href="#contact"><i class="material-icons">contacts</i>CONTACT US</a></li>
+                <li><a href="/signup.html"><i class="material-icons">person</i>LOGOUT</a></li>    
+                <li><div class="divider"></div></li>
+
+                <br>
+                <img src="/images/local-advertising-ideas-social.jpg" style="width:100%;">
+        </ul> 
+    
+    <!-- HOME  -->
+    <div style="background-image: url(/images/wallpaper.jpg);">
+        <div style="margin-top: 0px;">
+            <center>
+                <br><br><img src="/images/FINAL LOGO.png" alt="" style="width:100px;">
+            </center>
+        </div>
+
+            <div>
+                <center>
+                    <h5 style="color: black; font-family: serif;">
+                        <b> NEW GENERATION IN CHRIST KINGDOM </b> 
+                    </h5>
+                    <h6 style="color: black; font-family: serif;">
+                            FULL GOSPEL CHURCH & MINISTRIES INC.
+                    </h6>
+                    </center>
+            </div><br>
+            <div>
+                <center>
+                <h4 style="color: grey; font-family: cursive;">
+                    "Your home,Your destiny"
+                </h4>
+                </center>
+            </div>
+
+            <br><br>
+            <center>
+            <a class="waves-effect btn" href="main.html">EXPLORE MORE</a>
+            </center><br><br>
+    </div>
+
+    <img src="/images/footerbanner.PNG" alt="">
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+          <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+          <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+          <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+          <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.dropdown-trigger').dropdown();
+            $('.fixed-action-btn').floatingActionButton();
+        });
+    </script>   
+
+</body>
+</html>
