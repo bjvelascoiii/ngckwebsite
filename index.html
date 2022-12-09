@@ -29,15 +29,39 @@
                             <li><a href="main.html">ABOUT</a></li>
                             <li><a href="contact.html">CONTACT US</a></li>
                             <li><ul id="dropdown2" class="dropdown-content"><br>
-                                <li><a href="#!">LOGIN</a></li>
+                                <li><a href="#login" class="waves-effect waves-light modal-trigger">
+                                  LOGIN</a></li>
                                 <li><a href="#!">REGISTER</a></li>
                               </ul>
                               <a class="dropdown-trigger" href="#!" data-target="dropdown2">
                                 OTHERS<i class="material-icons right">arrow_drop_down</i></a></li>
-                        </ul>
-              </div>
-            </nav>
+                          </ul>
+                </div>
+              </nav>
+          </div>
+      
+     <!-- log in -->
+     <div id="login" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content" action="/action_page.php">
+        <div class="container">
+          <h4>Login</h4>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+   
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
         </div>
+      </form>
+    </div> 
+          
         
 
         <!-- side navigation -->
@@ -56,11 +80,11 @@
                 <li><a href="#!"><i class="material-icons">shopping_cart</i>My Cart</a></li>
                 <li><a href="#!"><i class="material-icons">history</i>Order History</a></li>
                 <li><div class="divider"></div></li>
-                <li><a href="#home"><i class="material-icons">home</i>HOME</a></li>
-                <li><a href="#about"><i class="material-icons">help</i>ABOUT</a></li>
-                <li><a href="#contact"><i class="material-icons">contacts</i>CONTACT US</a></li>
-                <li><a href="/signup.html"><i class="material-icons">person</i>LOGOUT</a></li>    
-                <li><div class="divider"></div></li>
+                <li><a href="index.html"><i class="material-icons">home</i>HOME</a></li>
+            <li><a href="main.html"><i class="material-icons">help</i>ABOUT</a></li>
+            <li><a href="#contact"><i class="material-icons">contacts</i>CONTACT US</a></li>
+            <li><a href="/signup.html"><i class="material-icons">person</i>LOGOUT</a></li>    
+            <li><div class="divider"></div></li>
 
                 <br>
                 <img src="/images/local-advertising-ideas-social.jpg" style="width:100%;">
@@ -100,28 +124,55 @@
 
     <img src="/images/footerbanner.PNG" alt="">
 
-    <div class="fixed-action-btn">
-        <a class="btn-floating btn-large red">
-          <i class="large material-icons">mode_edit</i>
+    <div class="fixed-action-btn ">
+        <a href="#message" class="btn-floating btn-large red open-button" onclick="openForm()">
+          <i class="large material-icons">message</i>
         </a>
-        <ul>
-          <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-          <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-          <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-          <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-        </ul>
     </div>
 
+     <!-- message  Structure -->
+     <div class="chat-popup" id="message">
+        <form action="/action_page.php" class="form-container">
+          <h5>Chat</h5>
+      
+          <label for="msg"><b>Message</b></label>
+          <textarea placeholder="Type message.." name="msg" required></textarea>
+      
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+
+    <script>
+        function openForm() {
+          document.getElementById("message").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("message").style.display = "none";
+        }
+        </script>
+    <script>
+        function openForm() {
+          document.getElementById("message").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("message").style.display = "none";
+        }
+        </script>
+
     <script>
         $(document).ready(function(){
             $('.sidenav').sidenav();
             $('.dropdown-trigger').dropdown();
+            $('.modal').modal();
             $('.fixed-action-btn').floatingActionButton();
         });
     </script>   

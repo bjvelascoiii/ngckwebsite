@@ -173,7 +173,24 @@
         </div>
       </div>
 
+      <div class="fixed-action-btn ">
+        <a href="#message" class="btn-floating btn-large red open-button" onclick="openForm()">
+          <i class="large material-icons">message</i>
+        </a>
+    </div>
 
+     <!-- message  Structure -->
+     <div class="chat-popup" id="message">
+        <form action="/action_page.php" class="form-container">
+          <h5>Chat</h5>
+      
+          <label for="msg"><b>Message</b></label>
+          <textarea placeholder="Type message.." name="msg" required></textarea>
+      
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
       
       <footer class="page-footer" style="background-color: black;">
         <div class="container">
@@ -208,6 +225,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+<script>
+  function openForm() {
+    document.getElementById("message").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("message").style.display = "none";
+  }
+  </script>
 
 <script>
     $(document).ready(function(){
